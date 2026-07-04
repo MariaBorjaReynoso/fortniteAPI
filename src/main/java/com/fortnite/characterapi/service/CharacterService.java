@@ -1,7 +1,8 @@
-package com.fortnite.characterapi.service;
+package com.fortnite.characterapi.Service;
 
-import com.fortnite.characterapi.entity.Character; 
-import com.fortnite.characterapi.repository.CharacterRepository;
+import com.fortnite.characterapi.Repository.CharacterRepository;
+import com.fortnite.characterapi.entity.Character;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
