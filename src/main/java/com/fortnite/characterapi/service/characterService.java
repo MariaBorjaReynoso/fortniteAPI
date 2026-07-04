@@ -1,6 +1,6 @@
 package com.fortnite.characterapi.service;
 
-import com.fortnite.characterapi.model.Character;
+import com.fortnite.characterapi.entity.Character; 
 import com.fortnite.characterapi.repository.CharacterRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

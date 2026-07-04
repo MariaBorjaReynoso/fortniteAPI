@@ -1,6 +1,6 @@
 package com.fortnite.characterapi.repository;
 
-import com.fortnite.characterapi.model.Character;
+import com.fortnite.characterapi.entity.Character;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.List;
