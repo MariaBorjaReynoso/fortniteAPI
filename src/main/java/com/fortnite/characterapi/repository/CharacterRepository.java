@@ -1,4 +1,4 @@
-package com.fortnite.characterapi.Repository;
+package com.fortnite.characterapi.repository;
 
 import com.fortnite.characterapi.entity.Character;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,6 +1,6 @@
 package com.fortnite.characterapi.controller;
 
-import com.fortnite.characterapi.Service.CharacterService;
+import com.fortnite.characterapi.service.CharacterService;
 import com.fortnite.characterapi.entity.Character;
 
 import org.springframework.beans.factory.annotation.Autowired;
