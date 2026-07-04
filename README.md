@@ -31,7 +31,7 @@ A RESTful API for managing Fortnite characters using Spring Boot, PostgreSQL, an
     "costVbucks": 1200,
     "rarity": "Rare",
     "universe": "Fortnite",
-    "imageUrl": "https://example.com/renegade-raider.png",
+    "imageUrl": "assets/images/Renegade_Raider_29_-_Outfit_-_Fortnite.webp",
     "role": "OG Survivor",
     "pickaxe": "Raider's Axe",
     "glider": "Victory Umbrella",
