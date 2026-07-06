@@ -1,32 +1,33 @@
-# Stage 1: Build the application using JDK 21
+# Build stage using Java 21 to compile the code
 FROM eclipse-temurin:21-jdk-alpine AS build
 
 WORKDIR /app
 
-# Copy the Maven wrapper and pom.xml first for better caching
+# Copy Maven files first 
 COPY mvnw mvnw
 COPY .mvn .mvn
 COPY pom.xml .
 
-# Make the mvnw executable
+# Make the wrapper executable
 RUN chmod +x mvnw
 
-# Download dependencies first (cached for faster builds)
+# Download dependencies (saves time on rebuilds)
 RUN ./mvnw dependency:go-offline -B
 
-# Copy the rest of the code
+# Copy source code and build
 COPY src src
-
-# Build the application
 RUN ./mvnw clean package -DskipTests
 
-# Stage 2: Create a lightweight runtime image
+# Runtime stage lightweight image for running the app
 FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /app
 
+# Copy the built JAR from the build stage
 COPY --from=build /app/target/*.jar app.jar
 
+# Port for the API
 EXPOSE 8080
 
+# Start the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
