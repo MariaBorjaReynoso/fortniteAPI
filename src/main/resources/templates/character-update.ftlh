@@ -219,7 +219,7 @@
                     <div class="form-group">
                         <label for="character-universe">Universe <span class="required">*</span></label>
                         <select id="character-universe" name="universe" required>
-                            <option value="${character.universe}" selected>${character.universe} (current)</option>
+                            <option value="${character.universe!''}" selected>${character.universe!''} (current)</option>
                             <option value="Icon">Icon</option>
                             <option value="Gaming">Gaming</option>
                             <option value="Crew">Crew</option>
@@ -238,13 +238,13 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="character-role">Role <span class="required">*</span></label>
-                        <input type="text" id="character-role" name="role" value="${character.role}" placeholder="e.g., OG Survivor" required>
+                        <input type="text" id="character-role" name="role" value="${character.role!''}" placeholder="e.g., OG Survivor" required>
                     </div>
 
                     <div class="form-group">
                         <label for="character-rarity">Rarity <span class="required">*</span></label>
                         <select id="character-rarity" name="rarity" required>
-                            <option value="${character.rarity}" selected>${character.rarity} (current)</option>
+                            <option value="${character.rarity!''}" selected>${character.rarity!''} (current)</option>
                             <option value="Common">Common</option>
                             <option value="Uncommon">Uncommon</option>
                             <option value="Rare">Rare</option>
@@ -258,39 +258,39 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="character-season">Season / Release Date</label>
-                        <input type="text" id="character-season" name="releaseDate" value="${character.releaseDate}" placeholder="e.g., Chapter 1, Season 2">
+                        <input type="text" id="character-season" name="releaseDate" value="${character.releaseDate!''}" placeholder="e.g., Chapter 1, Season 2">
                     </div>
 
                     <div class="form-group">
                         <label for="character-cost">Cost (V-Bucks)</label>
-                        <input type="number" id="character-cost" name="costVbuck" value="${character.costVbucks}" placeholder="e.g., 1200" min="0">
+                        <input type="number" id="character-cost" name="costVbucks" value="${character.costVbucks!0}" placeholder="e.g., 1200" min="0">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="character-image">Image URL <span class="required">*</span></label>
-                    <input type="url" id="character-image" name="imageUrl" value="${character.imageUrl}" placeholder="https://example.com/character.png" required>
+                    <input type="url" id="character-image" name="imageUrl" value="${character.imageUrl!''}" placeholder="https://example.com/character.png" required>
                     <span class="hint">Paste a URL to your character's image</span>
                 </div>
 
                 <div class="form-group">
                     <label for="character-description">Short Description <span class="required">*</span></label>
-                    <textarea id="character-description" name="description" rows="4" placeholder="Describe the character in 1-2 sentences..." required>${character.description}</textarea>
+                    <textarea id="character-description" name="description" rows="4" placeholder="Describe the character in 1-2 sentences..." required>${character.description!''}</textarea>
                 </div>
 
                 <div class="form-group">
                     <label for="character-pickaxe">Pickaxe</label>
-                    <input type="text" id="character-pickaxe" name="pickaxe" value="${character.pickaxe}" placeholder="e.g., Ice Breaker">
+                    <input type="text" id="character-pickaxe" name="pickaxe" value="${character.pickaxe!''}" placeholder="e.g., Ice Breaker">
                 </div>
 
                 <div class="form-group">
                     <label for="character-glider">Glider</label>
-                    <input type="text" id="character-glider" name="glider" value="${character.glider}" placeholder="e.g., Shattered Wing">
+                    <input type="text" id="character-glider" name="glider" value="${character.glider!''}" placeholder="e.g., Shattered Wing">
                 </div>
 
                 <div class="form-group">
                     <label for="character-emote">Emote</label>
-                    <input type="text" id="character-emote" name="emote" value="${character.emote}" placeholder="e.g., Popular Vibe">
+                    <input type="text" id="character-emote" name="emote" value="${character.emote!''}" placeholder="e.g., Popular Vibe">
                 </div>
 
                 <div class="form-actions">
