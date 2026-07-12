@@ -263,7 +263,7 @@
 
                     <div class="form-group">
                         <label for="character-cost">Cost (V-Bucks)</label>
-                        <input type="number" id="character-cost" name="costVbucks" value="${character.costVbucks}" placeholder="e.g., 1200" min="0">
+                        <input type="number" id="character-cost" name="costVbuck" value="${character.costVbucks}" placeholder="e.g., 1200" min="0">
                     </div>
                 </div>
 
