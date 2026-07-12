@@ -283,23 +283,23 @@
                 <div class="profile-left">
                     <div class="profile-image">
                         <img src="${character.imageUrl}" alt="${character.name}">
-                        <span class="rarity-badge large">${character.rarity}</span>
+                        <span class="rarity-badge large">${character.rarity!'Unknown'}</span>
                     </div>
 
                     <div class="loadout-mini">
                         <div class="loadout-mini-item">
                             <span class="mini-icon">⛏️</span>
-                            <span class="mini-name">${character.pickaxe}</span>
+                            <span class="mini-name">${character.pickaxe!'None'}</span>
                             <span class="mini-type">Pickaxe</span>
                         </div>
                         <div class="loadout-mini-item">
                             <span class="mini-icon">🪂</span>
-                            <span class="mini-name">${character.glider}</span>
+                            <span class="mini-name">${character.glider!'None'}</span>
                             <span class="mini-type">Glider</span>
                         </div>
                         <div class="loadout-mini-item">
                             <span class="mini-icon">💃</span>
-                            <span class="mini-name">${character.emote}</span>
+                            <span class="mini-name">${character.emote!'None'}</span>
                             <span class="mini-type">Emote</span>
                         </div>
                     </div>
@@ -309,29 +309,29 @@
                     <h1>${character.name}</h1>
 
                     <div class="profile-tags">
-                        <span class="tag"> ${character.rarity}</span>
-                        <span class="tag"> ${character.role}</span>
-                        <span class="tag"> ${character.universe}</span>
+                        <span class="tag"> ${character.rarity!'Unknown'}</span>
+                        <span class="tag"> ${character.role!'Unknown'}</span>
+                        <span class="tag"> ${character.universe!'Unknown'}</span>
                     </div>
 
                     <div class="profile-stats">
                         <div class="stat-box">
                             <span class="stat-label">Release Date</span>
-                            <span class="stat-value">${character.releaseDate}</span>
+                            <span class="stat-value">${character.releaseDate!'Unknown'}</span>
                         </div>
                         <div class="stat-box">
                             <span class="stat-label">Cost</span>
-                            <span class="stat-value">${character.costVbucks} V-Bucks</span>
+                            <span class="stat-value">${character.costVbucks!0} V-Bucks</span>
                         </div>
                         <div class="stat-box">
                             <span class="stat-label">Rarity</span>
-                            <span class="stat-value">${character.rarity}</span>
+                            <span class="stat-value">${character.rarity!'Unknown'}</span>
                         </div>
                     </div>
 
                     <div class="profile-bio">
                         <h2>Description</h2>
-                        <p>${character.description}</p>
+                        <p>${character.description!'No description available.'}</p>
                     </div>
 
                     <div class="profile-actions">
